@@ -38,7 +38,10 @@
         <button @click="hacerRetiro(100)" :disabled="desactivar">Retirar Cantidad</button>
 
         <hr>
-        <footer-component />
+        <footer-component 
+          :valor="cantidad"
+          fecha="Noviembre 11 2021"
+        />
     </div>
 </body>
 <script src="main.js"></script>

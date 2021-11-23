@@ -2,7 +2,7 @@ const app = Vue.createApp({
     data() {
         return {
             titulo: 'Bank of Pokemons by emc',
-            cantidad: 0,
+            cantidad: 100,
             enlace: 'https://pokeapi.co/api/v2/pokemon/',
             estado: true,
             desactivar: false,
@@ -14,6 +14,7 @@ const app = Vue.createApp({
             this.estado = !this.estado;
         },
         camiarCantidad(valor) {
+           
             this.cantidad = this.cantidad + valor;
         },
         hacerRetiro(valor) {
