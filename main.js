@@ -17,19 +17,22 @@ const app = Vue.createApp({
             this.cantidad = this.cantidad + valor;
         },
         hacerRetiro(valor) {
-            if(this.cantidad == 0) {
+            if (this.cantidad == 0) {
                 this.desactivar = true;
                 alert('No hay mas pokemons');
                 return
-            } 
+            }
             this.cantidad = this.cantidad - valor;
         }
     },
-        computed: { 
-            colorCantidad() {   
-                return this.cantidad > 0 ? 'text-success' : 'text-danger';
-            }
+    computed: {
+        colorCantidad() {
+            return this.cantidad > 0 ? 'text-success' : 'text-danger';
         },
+        tituloMayuscula() {
+            return this.titulo.toUpperCase();
+        }
+    },
 
-    
+ 
 })
